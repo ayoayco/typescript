@@ -1,21 +1,6 @@
-var Student = (function () {
-    function Student(firstname, middleinitial, lastname) {
-        this.firstname = firstname;
-        this.middleinitial = middleinitial;
-        this.lastname = lastname;
-        this.fullname = firstname + " " + middleinitial + " " + lastname;
-    }
-    return Student;
-})();
-
-/*interface Person {
-firstname: string;
-lastname: string;
-}*/
-function greeter(person) {
-    return "Hello, " + person.firstname + " " + person.lastname;
+function area(shape, width, height) {
+    var area = width * height;
+    return "I'm a " + shape + " with an area of " + area + " cm squared.";
 }
 
-var user = new Student("Jane", "M.", "User");
-
-document.body.innerHTML = greeter(user);
+document.body.innerHTML = area("rectangle", 10, 15);

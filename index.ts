@@ -1,19 +1,6 @@
-class Student {
-    fullname : string;
-    constructor(public firstname, public middleinitial, public lastname) {
-        this.fullname = firstname + " " + middleinitial + " " + lastname;
-    }
+function area(shape: string, width: number, height:number){
+    var area = width * height;
+    return "I'm a "+shape+" with an area of "+area+" cm squared.";
 }
 
-interface Person {
-    firstname: string;
-    lastname: string;
-}
-
-function greeter(person : Person) {
-    return "Hello, " + person.firstname + " " + person.lastname;
-}
-
-var user = new Student("Jane", "M.", "User");
-
-document.body.innerHTML = greeter(user);
+document.body.innerHTML = area("rectangle", 10, 15);
